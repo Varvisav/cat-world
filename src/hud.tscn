@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://hatfevgcmpsx"]
+
+[ext_resource type="PackedScene" uid="uid://dgcjhn6m24grk" path="res://src/item_slot.tscn" id="1_6xhvv"]
+
+[node name="Hud" type="CanvasLayer" unique_id=1386516982]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=201672230]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="ItemSlot" parent="HBoxContainer" unique_id=302866627 instance=ExtResource("1_6xhvv")]
+layout_mode = 2
+
+[node name="ItemSlot2" parent="HBoxContainer" unique_id=884679045 instance=ExtResource("1_6xhvv")]
+layout_mode = 2
