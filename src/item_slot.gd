@@ -10,4 +10,4 @@ func _ready() -> void:
 	if slot.item != null:
 		item_texture.texture = slot.item.icon
 	item_label.text = slot.item.item_name
-	#like wtf
+	#like wtfff
