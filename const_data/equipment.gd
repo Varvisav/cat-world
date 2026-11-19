@@ -1,5 +1,5 @@
 extends Resource
-class_name Equipment
+class_name EquipmentData
 
 enum SlotIndex{
 	SLOT_1,
@@ -9,20 +9,16 @@ enum SlotIndex{
 @export var slot_1: SlotData = SlotData.new()
 @export var slot_2: SlotData = SlotData.new()
 
-func add_item(item:Item):
+func add_item(item:ItemData):
 	if slot_1.is_empty():
-		slot_1.item = item
+		slot_1.item_data = item
 		return
 	elif slot_2.is_empty():
-		slot_2.item = item
+		slot_2.item_data = item
 		return
 	
 func remove_item(slot_index: SlotIndex):
 	if slot_index == SlotIndex.SLOT_1:
-		slot_1.item=null
+		slot_1.item_data=null
 	elif slot_index == SlotIndex.SLOT_2:
-		slot_2.item=null
-
-
-
-
+		slot_2.item_data=null
